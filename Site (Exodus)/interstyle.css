@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    text-align: center;
+    color: rgb(215, 215, 215);
+}
+
+html {
+    margin: 0; 
+    height: 100%; 
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#intermission-a h3 {
+    color: #56e4e4;
+}
+
+#intermission-b h3 {
+    color: #f3e56a;
+}
+
+#common-intermissions {
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid rgb(35, 35, 35);
+    border-radius: 0.4rem;
+    padding: 0rem 0px 1rem 0px;
+    width: 15rem;
+    justify-content: center;
+}
+
+#common-intermissions h2 {
+    margin: 0 0 1rem 0;
+}
+
+#common-intermissions #intermission-b h2 {
+    margin: 1rem 0 1rem 0;
+
+}
+
+#intermission-c {
+    margin-top: 2rem;
+}
+
+#intermission-c h2 {
+    margin-bottom: 0.4rem;
+}
+
+#intermission-c h4 {
+    color: rgb(185, 185, 185);
+    margin-top: 0;
+
+}
+#intermission-c .active {
+    color: black;
+}
+
+#intermission-c h2:hover,
+#intermission-c h4:hover {
+    color: black;
+}

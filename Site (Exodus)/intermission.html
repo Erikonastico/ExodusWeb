@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="interstyle.css">
+    <title>Intermissão</title>
+</head>
+
+<body>
+    <main>
+        <section id="common-intermissions">
+            <div id="intermission-a">
+                <h3>Intermissão A</h3>
+                <img src="./assets/Disquete (A1).png" alt="Disquete do universo A1" width="100rem" height="100rem">
+            </div>
+            <div id="intermission-b">
+                <h3>Intermissão B</h3>
+                <img src="./assets/Disquete B1.png" alt="Disquete do universo B1" width="100rem" height="100rem">
+            </div>
+        </section>
+        <section id="intermission-c">
+            <h2>[S] NO UNIVERSES SHALL REST</h2>
+            <h4>"You are ready to play?"</h4>
+            <img src="./assets/Disquete (Contorno).png" alt="Disquete do universo C1" width="130rem" height="130rem">
+            <a href="#" onclick="Teste.contador()">a</a>
+        </section>
+    </main>
+</body>
+
+<script>
+    const Teste = {
+    teste() {
+        const d = new Date();
+        document.getElementById('intermission-c').innerHTML = d.toLocaleTimeString();
+        setTimeout(Teste.teste2(), 25000)
+        },
+    teste2() {
+        alert('111111111');
+    }
+}
+    setInterval(Teste.teste(), 3000);
+</script>
+
+</html>
