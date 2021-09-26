@@ -1,7 +1,7 @@
 body {
     background-color: black;
     text-align: center;
-    color: rgb(215, 215, 215);
+    color: rgb(255, 255, 255);
 }
 
 html {
@@ -50,15 +50,42 @@ html {
 }
 
 #intermission-c h4 {
-    color: rgb(185, 185, 185);
     margin-top: 0;
-
-}
-#intermission-c .active {
-    color: black;
 }
 
-#intermission-c h2:hover,
-#intermission-c h4:hover {
-    color: black;
+#intermission-c h2, #intermission-c h4 {
+    color: rgb(185, 185, 185);
+    animation: fade-test 5s infinite;
+}
+
+#intermission-c img {
+    animation: transparency-test 5s infinite;
+}
+
+@keyframes fade {
+    0% {color: rgb(185, 185, 185)}
+    50% {color: rgb(43, 43, 43)}
+    100% {color: rgb(185, 185, 185)}
+}
+
+@keyframes transparency {
+    0% {opacity: 100%}
+    50% {opacity: 25%}
+    100% {opacity: 100%}
+}
+
+@keyframes fade-test {
+    0% {visibility: initial}
+    0.01% {visibility: hidden}
+    50.99% {visibility: hidden}
+    51% {visibility: initial}
+    100% {visibility: initial}
+}
+
+@keyframes transparency-test {
+    0% {visibility: initial}
+    0.01% {visibility: hidden}
+    50.99% {visibility: hidden}
+    51% {visibility: initial}
+    100% {visibility: initial}
 }
