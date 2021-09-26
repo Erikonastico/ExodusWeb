@@ -11,7 +11,7 @@ body {
     padding-top: 20vh;
     text-align: center;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
 }
 
 p[name="phrase"] {
