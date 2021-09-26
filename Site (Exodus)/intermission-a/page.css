@@ -1,0 +1,215 @@
+html {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+    color: white;
+    border: 0;
+    margin: 0;
+    padding: 3rem 0;
+    font-size: 1.25vw;
+}
+
+#center-page {
+    margin: 20vh 0 20vh 0;
+    padding: 0;
+}
+
+iframe {
+    margin: 1rem 0;
+    border: 0; 
+    width: 500px; 
+    height: 120px;
+    border-radius: 1rem;
+}
+
+#title {
+    text-align: center;
+    margin: 0 0 4rem 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+#title h2, #title h3 {
+    font-weight: 550;
+}
+
+.text-box h2 {
+    margin: 0 0 0 0;
+}
+
+.text-box h3 {
+    margin: 0.5rem 0 0 0;
+}
+
+#text p:first-of-type {
+    text-align: center;
+    font-style: italic;
+}
+
+.text-box {
+    padding: 0rem 3rem 3rem 3rem;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+#chat {
+    background-color: rgb(5, 46, 48);
+    font-size: 1.05rem;
+    font-family: 'Roboto Mono', monospace, Helvetica, sans-serif;
+    padding: 1.5rem;
+    display: block;
+    text-align: left;
+    border-radius: 0.5rem;
+}
+
+#chat p{
+    margin: 0;
+}
+
+#chat .tag {
+    margin-right: 6px;
+    opacity: 85%;
+}
+
+#chat .tag:hover {
+    opacity: 100%;
+}
+
+.text-dp {
+    color: rgb(153, 153, 153);
+}
+
+.narrator {
+    font-style: italic;
+}
+
+.content {
+    margin: 0.5vw;
+    padding: 1vw;
+    width: 50vw;
+    height: 100%;
+    background-color: rgb(20,20,20);
+    border-radius: 1rem;
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+}
+
+.first-in-page {
+    margin: 0 0 0.8rem 0;
+}
+
+#pray {
+    font-size: 1.15rem;
+}
+
+#dp-phrase {
+    margin: 3rem 0;
+    font-size: 1.3rem;
+    opacity: 80%;
+    text-align: center;
+}
+
+div > #dp-phrase:hover {
+    animation: dp-phrase 3s infinite;
+}
+
+div > #dp-phrase ~ #dp-phrase:hover {
+    animation: none;
+}
+
+#dp-phrase:hover {
+    opacity: 100%;
+}
+
+@keyframes dp-phrase {
+    0% {margin: 4rem 0}
+    50% {margin: 3rem 1rem}
+    100% {margin: 4rem 0}
+}
+
+div#last-phrase p {
+    font-weight: bold;
+    justify-content: center;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.next-page {
+    margin: 0 0 0 0;
+    justify-content: center;
+    display: flex;
+}
+
+a {
+    color: #56e4e4;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1bacac;
+}
+
+#page-2 .content {
+    background-color: rgb(16,16,16);
+}
+
+#page-3 .content {
+    background-color: rgb(12,12,12);
+}
+
+#page-4 .content{
+    background-color: rgb(8,8,8);
+}
+
+#center-page .content {
+    background-color: rgb(4,4,4);
+}
+
+#page-6 .content{
+    background-color: black;
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 2.5vw;
+    }
+
+    .content {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 4vw;
+    }
+
+    .content {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 4.3vw;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    html {
+        font-size: 4.8vw;
+    }
+}
